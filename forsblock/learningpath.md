@@ -82,7 +82,7 @@ forge test mit Assertions.
 
 **Phase 7 — Deployment Sepolia**
 Deployment Script in Foundry, Verification auf Etherscan,
-Dokumentation im GitHub Repository forsblock-bau-protocol.
+Dokumentation im GitHub Repository forsblock-site-protocol.
 
 ## Regeln für unsere Sessions
 
