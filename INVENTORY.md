@@ -53,3 +53,29 @@ Diese Datei dokumentiert, wo lokal Solidity-Material liegt, das **noch nicht** i
 3. ClaimContract.sol als Vorläufer von VerificationConsensus inspizieren
 4. Foundry-Versuche und Dubletten ins `~/dev/_archive_2026-04-28/` verschieben (erst nach Sichtung)
 5. README-Brücke in `plan-approval-logic` schreiben (Option B aus Strategie-Diskussion)
+
+## Pflicht-Aktion erste Donnerstag-Session
+
+**Vor allem anderen:** git pull ausführen!
+
+README.md wurde am 28.04. direkt auf GitHub im Browser repariert (Merge-Konflikt aus Commit 0d2946f aufgelöst, englische Version B als Basis, Repo-Name-Notation und Schreibweise korrigiert). Lokaler Stand ist noch der kaputte. Erst pullen, dann arbeiten:
+
+cd ~/dev/blockchain-engineering-lab
+git pull
+
+Falls README_BACKUP_2026-04-28.md noch lokal liegt: prüfen, ob nicht versehentlich getrackt; ggf. löschen oder in .gitignore aufnehmen.
+
+## Strategische Diskussion: Marken-Klärung (eigene Session, nicht beiläufig)
+
+Drei Markennamen zirkulieren parallel:
+- bunje — Branding/Marketing-Identität (GitHub-Display-Name, einziges gepinntes Repo)
+- bunjeblockchain — Affiliation/Company-Bezeichnung (im GitHub-Profil, jetzt auch im Lab-README)
+- Forsblock — Protokoll-/Code-Marke (Alternative zu AQUA, mehrere Whitepaper-Iterationen)
+
+Plus zwei Repo-Identitäten:
+- blockchain-engineering-lab — Lab/Lerngeschichte
+- plan-approval-logic — ETR-Artikel-Artifact
+
+Frage zur Klärung: Welche Marke trägt was? Wo passt was zu Tim Bansemers Aquaduct-GmbH-Plan? Sollte das Lab-Repo umbenannt werden (z.B. zu bunje)? Konsequenzen für Verlinkungen prüfen.
+
+Diese Diskussion gehört in eine eigene fokussierte Session, idealerweise mit klarem Kopf am Wochenende.
