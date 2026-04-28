@@ -1,4 +1,4 @@
-# Blockchain Engineering Lab — Solidity + Foundry (bunjeblockchain)
+# Blockchain Engineering Lab — Solidity + Foundry bunjeblockchain
 
 Learning-by-building repository for Solidity smart contracts + Foundry tests.
 Focus: fundamentals, state machines, and a security-first testing mindset.
