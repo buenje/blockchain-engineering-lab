@@ -26,6 +26,9 @@ modeled on-chain.
 | `src/` | Solidity contracts — learning experiments |
 | `test/` | Foundry test suites |
 | `28-day-challenge/` | Structured learning path |
+| `forsblock/` | forsblock protocol implementation |
+| `projects/` | Standalone project experiments |
+| `script/` | Deployment and interaction scripts |
 
 ---
 
