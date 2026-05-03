@@ -31,15 +31,18 @@ modeled on-chain.
 | `script/` | Deployment and interaction scripts |
 
 ---
-
 ## Connection to other repositories
 
-This lab feeds into:
-- [plan-approval-logic](https://github.com/buenje/plan-approval-logic) 
-  — production demonstrator for regulated approval workflows
-- forsblock / claimwork-site — protocol and application 
-  layer (in development, private)
+Part of the **Fundament** ecosystem —
+a cryptographic proof layer for tamper-proof 
+procedural documentation.
 
+| Layer | Repository | Status |
+|-------|-----------|--------|
+| Proof layer | Fundament | concept |
+| Protocol | forsblock | in development |
+| Demonstrator | [plan-approval-logic](https://github.com/buenje/plan-approval-logic) | deployed on Sepolia |
+| Application | claimwork-site | private, in development |
 ---
 
 ## Quickstart
