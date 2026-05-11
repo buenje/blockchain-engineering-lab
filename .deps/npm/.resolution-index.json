@@ -1,0 +1,29 @@
+{
+  "28-day-challenge/SimpleStorage.sol": {
+    "__sources__": {}
+  },
+  "28-day-challenge/Day1 -SimpleStorage/SimleStorage.sol": {
+    "__sources__": {
+      "28-day-challenge/Day1 -SimpleStorage/SimleStorage.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.24;\ncontract SimpleStorage{\n    uint256 public storevalue;\n    function set (uint256 _value) public{storevalue=_value;}\n    function get () public view returns (uint256){return storevalue;}\n    function increment() public {storevalue+=1;}\n    function decrement() public {storevalue-=1;}\n    }",
+        "file": "28-day-challenge/Day1 -SimpleStorage/SimleStorage.sol"
+      }
+    }
+  },
+  "28-day-challenge/day-01-simple-storage/SimpleStorage.sol": {
+    "__sources__": {
+      "28-day-challenge/day-01-simple-storage/SimpleStorage.sol": {
+        "content": "//SPDX-Identifier-Licensce:MIT;\npragma solidity ^0.8.24;\ncontract SimpleStorage{\n    uint256 public storevalue;\n    function set (uint256 _value) public{storevalue=_value;}\n    function get () public view returns (uint256)// ← Ankündigung: \"ich werde uint256 zurückgeben\"\n    {return storevalue;}// ← Aktion: \"hier ist der Wert\"\n    function increment() public {storevalue+=1;}\n    function decrement() public {storevalue-=1;}\n}",
+        "file": "28-day-challenge/day-01-simple-storage/SimpleStorage.sol"
+      }
+    }
+  },
+  "28-day-challenge/day-02-memory_calldata/day2-memory_calldata.sol": {
+    "__sources__": {
+      "28-day-challenge/day-02-memory_calldata/day2-memory_calldata.sol": {
+        "content": "//SPDX-License-Identifier:MIT\npragma solidity ^0.8.24;\ncontract MemoCalldata {\n    function getName (string memory name) public pure returns { string return name;\n    } \n}",
+        "file": "28-day-challenge/day-02-memory_calldata/day2-memory_calldata.sol"
+      }
+    }
+  }
+}
