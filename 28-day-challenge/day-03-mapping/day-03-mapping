@@ -1,0 +1,10 @@
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.24;
+contract AntragREgister {
+   mapping (uint256 => address) public antraege;
+    function SetAddress (uint256 id, address antragssteller) public { antraege [id] = antragssteller;}
+function getAddress (uint256 id) public view returns (address) { return antraege [id];
+
+}
+
+}
