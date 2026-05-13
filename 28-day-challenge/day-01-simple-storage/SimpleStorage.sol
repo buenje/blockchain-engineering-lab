@@ -1,4 +1,4 @@
-cd ~/dev/blockchain-engineering-lab
+cat ~/dev/blockchain-engineering-lab/28-day-challenge/_template/README.mdcd ~/dev/blockchain-engineering-lab
 remixd -s . --remix-ide https://remix.ethereum.org//SPDX-Identifier-Licensce:MIT;
 pragma solidity ^0.8.24;
 contract SimpleStorage{
