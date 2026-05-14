@@ -27,3 +27,4 @@
 - `status public currentStatus` überflüssig — Mapping reicht
 - Setter-Körper Syntax unklar am Anfang
 - SPDX Leerzeichen fehlt wieder (`//SPDX` statt `// SPDX`)
+- `status` statt `statuses` verwechselt — Variablenname vs. Typ
