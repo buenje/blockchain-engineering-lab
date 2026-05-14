@@ -16,3 +16,14 @@
 - `^0.8.024` ungültige Semver → korrekt: `^0.8.0`
 - `string name` ohne Data Location → korrekt: `string memory name`
 - `return` statt `
+
+## Tag 4 — Struct
+- `/ SPDX` statt `// SPDX` (einmaliger Rückfall)
+- Struct-Instanz (`Antrag public antrag`) Konzept unklar — Vorlage vs. Instanz
+- Setter-Körper: `status.id=status` statt `antrag.id = id`
+
+## Tag 5 — Enum
+- Semikolon nach letztem Enum-Wert (`Completed;`) — falsch, kein Semikolon
+- `status public currentStatus` überflüssig — Mapping reicht
+- Setter-Körper Syntax unklar am Anfang
+- SPDX Leerzeichen fehlt wieder (`//SPDX` statt `// SPDX`)
