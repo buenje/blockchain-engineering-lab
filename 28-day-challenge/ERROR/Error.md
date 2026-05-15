@@ -3,7 +3,7 @@
 ## Wiederkehrende Fehler
 | Fehler | Zuerst gesehen | Zuletzt gesehen |
 |--------|----------------|-----------------|
-| SPDX mit Semikolon | Tag 1 | Tag 2 |
+| SPDX mit Semikolon oder fehlendem Leerzeichen | Tag 1 | Tag 6 |
 | `return` statt `returns (Typ)` | Tag 1 | Tag 2 |
 
 ## Tag 1 — SimpleStorage
@@ -15,7 +15,12 @@
 - SPDX Semikolon (wiederholt)
 - `^0.8.024` ungültige Semver → korrekt: `^0.8.0`
 - `string name` ohne Data Location → korrekt: `string memory name`
-- `return` statt `
+- `return` statt `returns (string memory)` (wiederholt!)
+- `return string name` → korrekt: nur `return name`
+
+## Tag 3 — Mapping
+- SPDX Leerzeichen fehlt
+- `SetAddress` Großbuchstabe → korrekt: `setAddress`
 
 ## Tag 4 — Struct
 - `/ SPDX` statt `// SPDX` (einmaliger Rückfall)
@@ -23,12 +28,15 @@
 - Setter-Körper: `status.id=status` statt `antrag.id = id`
 
 ## Tag 5 — Enum
-- Semikolon nach letztem Enum-Wert (`Completed;`) — falsch, kein Semikolon
+- Semikolon nach letztem Enum-Wert (`Completed;`) — falsch
 - `status public currentStatus` überflüssig — Mapping reicht
-- Setter-Körper Syntax unklar am Anfang
-- SPDX Leerzeichen fehlt wieder (`//SPDX` statt `// SPDX`)
 - `status` statt `statuses` verwechselt — Variablenname vs. Typ
+- SPDX Leerzeichen fehlt wieder (`//SPDX` statt `// SPDX`)
+
+## Tag 6 — Modifier
+- SPDX Leerzeichen vor Doppelpunkt: `Identifier :MIT`
 - Contract ohne Namen geschrieben
 - Constructor nicht korrekt geschlossen
-- `_;` im Modifier vergessen — Pflicht, sonst wird Funktion nie ausgeführt
+- `_;` im Modifier vergessen — Pflicht
+- `public view` bei schreibender Funktion — `view` entfernen
 - Modifier-Syntax insgesamt unsicher — mehr Wiederholung nötig
