@@ -28,3 +28,7 @@
 - Setter-Körper Syntax unklar am Anfang
 - SPDX Leerzeichen fehlt wieder (`//SPDX` statt `// SPDX`)
 - `status` statt `statuses` verwechselt — Variablenname vs. Typ
+- Contract ohne Namen geschrieben
+- Constructor nicht korrekt geschlossen
+- `_;` im Modifier vergessen — Pflicht, sonst wird Funktion nie ausgeführt
+- Modifier-Syntax insgesamt unsicher — mehr Wiederholung nötig
