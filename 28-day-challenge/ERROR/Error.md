@@ -40,3 +40,10 @@
 - `_;` im Modifier vergessen — Pflicht
 - `public view` bei schreibender Funktion — `view` entfernen
 - Modifier-Syntax insgesamt unsicher — mehr Wiederholung nötig
+
+## Tag 7 — Events
+- Event-Syntax unklar: Parameter gehören in die Event-Definition, nicht als State Variables darunter
+- `emit` und `enum` verwechselt — emit = aussenden, enum = Aufzählung
+- `address applicant` als Funktionsparameter statt `msg.sender` — Adresse kommt automatisch
+- Grundprinzip Event/emit nicht verstanden — viel KI-Hilfe nötig
+- `indexed` selbst hinzugefügt und korrekt verwendet — positiv
