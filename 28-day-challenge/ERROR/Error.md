@@ -47,3 +47,12 @@
 - `address applicant` als Funktionsparameter statt `msg.sender` — Adresse kommt automatisch
 - Grundprinzip Event/emit nicht verstanden — viel KI-Hilfe nötig
 - `indexed` selbst hinzugefügt und korrekt verwendet — positiv
+
+## Tag 8 — Inheritance
+- `uint256 indexed` außerhalb Event — macht keinen Sinn
+- Constructor ohne Klammern: `constructor` statt `constructor()`
+- `_;` in Funktion geschrieben statt nur im Modifier
+- Modifier komplett vergessen — nur Funktion geschrieben
+- Child Contract innerhalb Base Contract verschachtelt — nicht erlaubt
+- `_name_` statt `_name` — falscher Variablenname
+- Modifier-Syntax weiterhin unsicher
