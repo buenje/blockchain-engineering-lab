@@ -56,3 +56,11 @@
 - Child Contract innerhalb Base Contract verschachtelt — nicht erlaubt
 - `_name_` statt `_name` — falscher Variablenname
 - Modifier-Syntax weiterhin unsicher
+
+## Tag 9 — Interface
+- Erster Versuch war normaler Contract statt Interface — Keyword `interface` vergessen
+- Parameter-Anzahl und Reihenfolge unsicher: `_id` = welcher Antrag, `_status` = neuer Wert
+- `override` Platzierung unklar — gehört in die implementierende Funktion, nicht ins Interface
+- Interface-Konzept teilweise verstanden: keine Logik, nur Signaturen, alle `external`
+- Syntaxfluss instabil: geschweifte Klammern, `returns`, Funktionsabschlüsse
+- Stärke erkannt: Architektur- und Zustandsdenken ist überdurchschnittlich entwickelt
