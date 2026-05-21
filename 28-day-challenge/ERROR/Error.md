@@ -64,3 +64,8 @@
 - Interface-Konzept teilweise verstanden: keine Logik, nur Signaturen, alle `external`
 - Syntaxfluss instabil: geschweifte Klammern, `returns`, Funktionsabschlüsse
 - Stärke erkannt: Architektur- und Zustandsdenken ist überdurchschnittlich entwickelt
+
+## Tag 10 — Mapping + Struct
+- Semikolon nach `address Name` vergessen
+- Erst `string` statt `address` versucht — string macht bei Mapping-Key keinen Sinn
+- Geschweifte Klammern bei Mapping-Deklaration: `public{ antragMap;}` statt `public antragMap;`
