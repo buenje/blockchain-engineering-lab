@@ -69,3 +69,9 @@
 - Semikolon nach `address Name` vergessen
 - Erst `string` statt `address` versucht — string macht bei Mapping-Key keinen Sinn
 - Geschweifte Klammern bei Mapping-Deklaration: `public{ antragMap;}` statt `public antragMap;`
+
+## Tag 11 — Array
+- `push` außerhalb Funktion auf Contract-Ebene geschrieben
+- `address public antragsteller` statt `address[] public antragsteller` — eckige Klammern vergessen
+- `push` als Zuweisungsoperator: `push = msg.sender` statt `push(msg.sender)`
+- Parameter-Klammer mit Funktionskörper verwechselt
