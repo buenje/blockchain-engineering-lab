@@ -75,3 +75,8 @@
 - `address public antragsteller` statt `address[] public antragsteller` — eckige Klammern vergessen
 - `push` als Zuweisungsoperator: `push = msg.sender` statt `push(msg.sender)`
 - Parameter-Klammer mit Funktionskörper verwechselt
+
+## Tag 12 — Constructor mit Parameter
+- State Variable `owner` nicht deklariert — `address public owner` vergessen
+- `constructor() public` — constructor hat keine Sichtbarkeit ab ^0.7.0
+- Parameter `_owner` im Constructor vergessen — kam nicht von außen rein
