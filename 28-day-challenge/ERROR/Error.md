@@ -80,3 +80,8 @@
 - State Variable `owner` nicht deklariert — `address public owner` vergessen
 - `constructor() public` — constructor hat keine Sichtbarkeit ab ^0.7.0
 - Parameter `_owner` im Constructor vergessen — kam nicht von außen rein
+
+## Tag 13 — require / revert
+- `!finished` nicht verstanden — `!` bedeutet "nicht", also "noch nicht abgeschlossen"
+- Umweg über `if` statt direkt `require` — require ist die sauberere Lösung
+- `public view` vergessen — Funktion liest nur, verändert nichts
