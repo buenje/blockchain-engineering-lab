@@ -85,3 +85,9 @@
 - `!finished` nicht verstanden — `!` bedeutet "nicht", also "noch nicht abgeschlossen"
 - Umweg über `if` statt direkt `require` — require ist die sauberere Lösung
 - `public view` vergessen — Funktion liest nur, verändert nichts
+
+## Tag 14 — payable / msg.value
+- `payable` Keyword vergessen — Funktion kann ohne `payable` keinen Ether empfangen
+- `msg.value` falsch angeordnet — gehört in `require`, nicht als separate Variable
+- Semikolon innerhalb `require` — nach Fehlerstring, nicht nach schließender Klammer
+- Zweimal KI-Korrektur nötig — Konzept payable/msg.value noch nicht sicher
