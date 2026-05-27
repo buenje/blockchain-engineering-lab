@@ -91,3 +91,9 @@
 - `msg.value` falsch angeordnet — gehört in `require`, nicht als separate Variable
 - Semikolon innerhalb `require` — nach Fehlerstring, nicht nach schließender Klammer
 - Zweimal KI-Korrektur nötig — Konzept payable/msg.value noch nicht sicher
+
+## Tag 15 — block.timestamp
+- `block.timestamp` Konzept unklar — Blackout beim ersten Versuch
+- Deadline-Logik nicht selbst entwickelt — Erklärung nötig
+- `public view` wieder vergessen — Funktion liest nur, verändert nichts
+- Wiederholung block.timestamp notwendig
