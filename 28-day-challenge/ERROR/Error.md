@@ -97,3 +97,12 @@
 - Deadline-Logik nicht selbst entwickelt — Erklärung nötig
 - `public view` wieder vergessen — Funktion liest nur, verändert nichts
 - Wiederholung block.timestamp notwendig
+
+## Tag 16 — Access Control
+- Von altem X-Post gespickt im ersten Versuch — Cheat Code
+- Contract Name `Role` kollidiert mit Enum `Role` — Namen müssen verschieden sein
+- Pragma vergessen
+- `role[msg.sender] = Role.Owner` nicht verstanden:
+  - `role[msg.sender]` = "trag für diese Adresse einen Wert ins Mapping ein"
+  - `Role.Owner` = "der Wert ist der erste Enum-Eintrag"
+  - Zusammen: "der Deployer bekommt die Owner-Rolle"
