@@ -106,3 +106,10 @@
   - `role[msg.sender]` = "trag für diese Adresse einen Wert ins Mapping ein"
   - `Role.Owner` = "der Wert ist der erste Enum-Eintrag"
   - Zusammen: "der Deployer bekommt die Owner-Rolle"
+
+## Tag 17 — State Machine
+- Semikolon im Enum (wiederholt)
+- `State` statt `Status` als Typ für currentStatus
+- Groß/Kleinschreibung inkonsistent: `Status.underreview` statt `Status.Underreview`
+- Unicode-Zeichen in String: `geprüft` verursacht ParserError — nur ASCII in Strings
+- Enum-Wert `UnderReview` vs `Underreview` — Schreibweise nicht festgelegt und durchgehalten
