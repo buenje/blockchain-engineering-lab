@@ -113,3 +113,8 @@
 - Groß/Kleinschreibung inkonsistent: `Status.underreview` statt `Status.Underreview`
 - Unicode-Zeichen in String: `geprüft` verursacht ParserError — nur ASCII in Strings
 - Enum-Wert `UnderReview` vs `Underreview` — Schreibweise nicht festgelegt und durchgehalten
+- Logische Abfolge der State Machine holprig:
+  - submit() setzt Status auf Submitted obwohl er schon Submitted ist — sinnlos
+  - reject() prüft UnderReview korrekt, aber Fehlermeldung "zurueckgewiesen" ist irreführend
+  - Rejected kann nicht von UnderReview kommen wenn approve() schon Approved gesetzt hat — kein Schutz dagegen
+- Ablauflogik muss vor dem Coden durchdacht werden
