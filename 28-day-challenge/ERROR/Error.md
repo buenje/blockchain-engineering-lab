@@ -118,3 +118,6 @@
   - reject() prüft UnderReview korrekt, aber Fehlermeldung "zurueckgewiesen" ist irreführend
   - Rejected kann nicht von UnderReview kommen wenn approve() schon Approved gesetzt hat — kein Schutz dagegen
 - Ablauflogik muss vor dem Coden durchdacht werden
+- submit() setzte Status auf Submitted statt auf Underreview — kein echter Zustandsübergang
+- Logikfehler: submit() und startReview() waren redundant — gleiche Funktion doppelt
+- Lösung: enum braucht None als Initialzustand damit submit() sinnvoll prüfen kann
