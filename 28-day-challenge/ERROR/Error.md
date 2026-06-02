@@ -121,3 +121,9 @@
 - submit() setzte Status auf Submitted statt auf Underreview — kein echter Zustandsübergang
 - Logikfehler: submit() und startReview() waren redundant — gleiche Funktion doppelt
 - Lösung: enum braucht None als Initialzustand damit submit() sinnvoll prüfen kann
+
+## Tag 18 — Mapping + Enum
+- `msg.sender` vs `status[msg.sender]` verwechselt — msg.sender ist die Adresse, status[msg.sender] ist der Wert im Mapping
+- `currentStatus` verwendet obwohl kein currentStatus deklariert — Mapping vergessen
+- `require(msg.sender == Status.None)` — Adresse mit Enum-Wert verglichen, falsche Typen
+- Syntax wiederholt holprig — mapping Zugriff noch nicht automatisch
