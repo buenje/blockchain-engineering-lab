@@ -127,3 +127,12 @@
 - `currentStatus` verwendet obwohl kein currentStatus deklariert — Mapping vergessen
 - `require(msg.sender == Status.None)` — Adresse mit Enum-Wert verglichen, falsche Typen
 - Syntax wiederholt holprig — mapping Zugriff noch nicht automatisch
+
+## Tag 19 — State Machine + Events
+- Event-Parameter falsch verstanden: Enum-Werte statt Typen in Event-Definition
+- Enum und Event gleich benannt — Namenskonflikt
+- `require` Syntax wieder unsicher: `(require[...]` statt `require(...)`
+- `Status.` Präfix vor Enum-Wert vergessen
+- Klammern weiterhin ein Thema — öffnen/schließen nicht konsistent
+- Grundprinzip Event/emit erst spät verstanden
+- Logik zähfließend — Ingenieursdenken hilft bei Architektur, aber Syntax braucht mehr Wiederholung
