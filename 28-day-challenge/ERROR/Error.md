@@ -136,3 +136,10 @@
 - Klammern weiterhin ein Thema — öffnen/schließen nicht konsistent
 - Grundprinzip Event/emit erst spät verstanden
 - Logik zähfließend — Ingenieursdenken hilft bei Architektur, aber Syntax braucht mehr Wiederholung
+
+## Tag 20 — Modifier + Rollen
+- Schließende Klammer bei onlyOwner vergessen
+- `user == msg.sender` statt `role[msg.sender] == Role.User` — Variable existiert nicht
+- `Admin == msg.sender` gleicher Fehler — Mapping-Zugriff vergessen
+- Positiv: Verknüpfung von Tag 6 und Tag 16 erstaunlich gut gelungen
+- Grundstruktur Modifier + Enum + Mapping selbst aufgebaut
