@@ -143,3 +143,10 @@
 - `Admin == msg.sender` gleicher Fehler — Mapping-Zugriff vergessen
 - Positiv: Verknüpfung von Tag 6 und Tag 16 erstaunlich gut gelungen
 - Grundstruktur Modifier + Enum + Mapping selbst aufgebaut
+
+## Tag 21 — Reentrancy / CEI Pattern
+- `msg.value` statt `msg.sender` als Mapping-Key — msg.value ist Betrag, msg.sender ist Adresse
+- `uint 256` mit Leerzeichen — korrekt: `uint256`
+- CEI Pattern Logik zunächst unklar — erst nach Erklärung verstanden
+- `balance[msg.sender] = 0` Zweck unklar — ist explizite Forderungslöschung, passiert nicht automatisch
+- `transfer` deprecated — moderner: `call{value: amount}("")`
