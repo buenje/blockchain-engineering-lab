@@ -157,3 +157,10 @@
 - CEI Pattern Logik zunächst unklar — erst nach Erklärung verstanden
 - `balance[msg.sender] = 0` Zweck unklar — ist explizite Forderungslöschung, passiert nicht automatisch
 - `transfer` deprecated — moderner: `call{value: amount}("")`
+
+## Tag 22 — Events + CEI
+- `msg.sender` in Event-Definition statt Parametername: `address indexed msg.sender` → `address indexed user`
+- `emit deposit` statt `emit Deposit` — Groß/Kleinschreibung muss exakt übereinstimmen
+- `emit` nach `transfer` — gehört davor
+- Nur ein Event für deposit und withdraw — zwei separate Events sauberer: `Deposited` und `Withdrawn`
+- `indexed` Bedeutung unklar — macht Parameter durchsuchbar für externe Apps
