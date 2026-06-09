@@ -164,3 +164,4 @@
 - `emit` nach `transfer` — gehört davor
 - Nur ein Event für deposit und withdraw — zwei separate Events sauberer: `Deposited` und `Withdrawn`
 - `indexed` Bedeutung unklar — macht Parameter durchsuchbar für externe Apps
+- Withdrawal Event nicht deklariert — emit Deposit für beide Funktionen verwendet, semantisch falsch
