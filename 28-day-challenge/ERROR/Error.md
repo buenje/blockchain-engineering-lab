@@ -167,3 +167,9 @@
 - Withdrawal Event nicht deklariert — emit Deposit für beide Funktionen verwendet, semantisch falsch
 - `payable` Bedeutung unklar: erlaubt Funktion Ether zu empfangen, erlaubt Adresse Ether zu empfangen
 - Unterschied deposit/withdraw Events unklar: deposit = Ether rein, withdraw = Ether raus + transfer
+
+## Tag 23 — Mapping + Enum + State Machine + Events
+- Enum Reihenfolge falsch: Returned vor Completed — logisch sollte Completed der Abschluss sein
+- `statuses[id]` UND `currentStatus` parallel geführt — redundant, ein Designfehler
+- Warum beide? Mapping speichert Status pro Antrag-ID, currentStatus ist global — können widersprechen
+- Lösung: entweder nur Mapping (jeder Antrag eigener Status) oder nur currentStatus (ein globaler Status)
