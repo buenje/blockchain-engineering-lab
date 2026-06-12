@@ -173,3 +173,10 @@
 - `statuses[id]` UND `currentStatus` parallel geführt — redundant, ein Designfehler
 - Warum beide? Mapping speichert Status pro Antrag-ID, currentStatus ist global — können widersprechen
 - Lösung: entweder nur Mapping (jeder Antrag eigener Status) oder nur currentStatus (ein globaler Status)
+
+## Tag 24 — State Machine sauber (ohne currentStatus)
+- GovStatus statt GovMachine — Namenskonsistenz nicht durchgehalten
+- statuses/stauses statt GovMachines — Mapping-Name vergessen
+- Semikolon nach address public owner vergessen
+- Schließende Klammer bei approval() vergessen
+- Positiv: kein currentStatus mehr — Designfehler von Tag 23 erkannt und korrigiert
