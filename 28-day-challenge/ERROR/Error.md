@@ -180,3 +180,12 @@
 - Semikolon nach address public owner vergessen
 - Schließende Klammer bei approval() vergessen
 - Positiv: kein currentStatus mehr — Designfehler von Tag 23 erkannt und korrigiert
+
+## Tag 25 — Constructor mit Rollen
+- `address public owner` doppelt deklariert
+- State Variables nach Constructor geschrieben — falsche Reihenfolge
+- Constructor nicht geschlossen — `}` vor Modifier vergessen
+- `_;` im Modifier vergessen
+- `require` ohne Semikolon
+- `role[msg.sender]` statt `role[_owner]` — Constructor setzt Rolle für Deployer statt übergebene Adresse
+- Constructor + Rollen Kombination noch nicht sicher abrufbar — braucht mehr Wiederholung
