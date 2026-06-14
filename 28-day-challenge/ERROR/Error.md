@@ -189,3 +189,10 @@
 - `require` ohne Semikolon
 - `role[msg.sender]` statt `role[_owner]` — Constructor setzt Rolle für Deployer statt übergebene Adresse
 - Constructor + Rollen Kombination noch nicht sicher abrufbar — braucht mehr Wiederholung
+
+## Tag 26 — Constructor + Rollen + State Machine
+- Nur ein Enum für Rollen — Status Enum fehlte zunächst
+- Modifier nur für Owner — onlyUser und onlyAdmin fehlten zunächst
+- `role` klein geschrieben als Parameter — verwechslung mit Enum `Role` — besser `_role` oder `newRole`
+- Status Mapping nicht genutzt — nur deklariert, keine Funktionen für Zustandsübergänge
+- Positiv: Grundstruktur claimworkflow selbst entwickelt
