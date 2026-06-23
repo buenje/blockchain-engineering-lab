@@ -196,3 +196,9 @@
 - `role` klein geschrieben als Parameter — verwechslung mit Enum `Role` — besser `_role` oder `newRole`
 - Status Mapping nicht genutzt — nur deklariert, keine Funktionen für Zustandsübergänge
 - Positiv: Grundstruktur claimworkflow selbst entwickelt
+
+## Tag 27 — ClaimWorkflow vollständig
+- Extra `}` nach submit() — Contract zu früh geschlossen
+- `statuses[msg.sender]` in Admin-Funktionen statt `statuses[user]` — Admin prüft eigenen Status statt Antragsteller
+- Warning: unused parameter `address user` — Parameter deklariert aber nicht genutzt
+- Positiv: vollständiger ClaimWorkflow mit Rollen, Modifier, State Machine selbst erarbeitet
