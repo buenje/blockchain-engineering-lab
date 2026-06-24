@@ -202,3 +202,18 @@
 - `statuses[msg.sender]` in Admin-Funktionen statt `statuses[user]` — Admin prüft eigenen Status statt Antragsteller
 - Warning: unused parameter `address user` — Parameter deklariert aber nicht genutzt
 - Positiv: vollständiger ClaimWorkflow mit Rollen, Modifier, State Machine selbst erarbeitet
+
+## Tag 28 — Final ClaimWorkflow
+- SPDX Leerzeichen fehlt — Tag 28, nach 28 Tagen immer noch
+- Modifier mit `public` deklariert — Modifier haben keine Sichtbarkeit
+- `require` ohne runde Klammern bei onlyUser
+- `function permitted` komplett falsch strukturiert — geschweifte statt runde Klammern
+- Enum Benennung klein geschrieben — `roles.owner` statt `Role.Owner` — Konvention gebrochen
+- Zu viel AI-Unterstützung während der Challenge — freies Coding noch nicht sicher
+- Grundmuster ClaimWorkflow verstanden aber nicht sicher abrufbar ohne Hilfe
+
+## Gesamtfazit 28 Tage
+- Syntaxfehler: SPDX, Semikolon, Klammern wiederholen sich bis Tag 28
+- Stärke: Architektur- und Zustandsdenken, Domänenwissen, Fehler selbst erkennen
+- Schwäche: freies Coding ohne Vorlage noch unsicher
+- Nächster Schritt: Cyfrin Foundry — Tests erzwingen Präzision ohne AI-Krücke
